@@ -1,9 +1,18 @@
-# MERNfinity
 
-[![NPM Version](https://img.shields.io/npm/v/mernfinity.svg)](https://www.npmjs.com/package/mernfinity)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+<p align="center">
+ <img src="https://i.ibb.co/1G4t0L5w/Mern-Finity.png" alt="Mern-Finity" border="0" width="100%" /></a>
+</p>
+
+<div align="center">  
+
+# MERNfinity
+[![NPM Version](https://img.shields.io/npm/v/mernfinity)](https://www.npmjs.com/package/mernfinity)
+[![License](https://img.shields.io/npm/l/mernfinity)](https://www.npmjs.com/package/mernfinity)
 
 A robust CLI tool that streamlines the build and deployment process for MERN stack applications by automating frontend builds and static file deployment.
+
+</div>
 
 ## Features
 
@@ -104,7 +113,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 
-Theja Ashwin
+[Theja Ashwin](https://github.com/thejaAshwin62)
+
 
 ## Support
 

@@ -7,6 +7,10 @@
   "bin": {
     "setup-mern": "./index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thejaAshwin62/mernfinity-npm-package/tree/main"
+  },
   "dependencies": {
     "chalk": "^5.3.0",
     "inquirer": "^9.3.7"

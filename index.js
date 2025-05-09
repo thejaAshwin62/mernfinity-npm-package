@@ -56,10 +56,10 @@ async function main() {
     console.log(chalk.blue("\n⚙️ Building React frontend..."));
     execSync("npm run build", { cwd: clientDir, stdio: "inherit" });
 
+    //Moving the Build Files to the public Directory
     console.log(
       chalk.blue("\n🚚 Moving dist files to the public directory...")
     );
-
     const distDir = path.join(clientDir, "dist");
 
     // Remove the old public directory based on the platform
