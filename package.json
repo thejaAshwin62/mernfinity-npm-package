@@ -1,0 +1,23 @@
+{
+  "name": "mernfinity",
+  "version": "1.0.1",
+  "description": "A simple CLI tool to build and deploy MERN stack projects",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "setup-mern": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^9.3.7"
+  },
+  "keywords": [
+    "mern",
+    "deploy",
+    "nodejs",
+    "react",
+    "fullstack"
+  ],
+  "author": "Theja Ashwin",
+  "license": "MIT"
+}
