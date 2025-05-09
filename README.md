@@ -1,12 +1,11 @@
-
-
 <p align="center">
- <img src="https://i.ibb.co/1G4t0L5w/Mern-Finity.png" alt="Mern-Finity" border="0" width="100%" /></a>
+ <img src="https://i.ibb.co/1G4t0L5w/Mern-Finity.png" alt="Mern-Finity" width="300px" /></a>
 </p>
 
-<div align="center">  
+<div align="center">
 
 # MERNfinity
+
 [![NPM Version](https://img.shields.io/npm/v/mernfinity)](https://www.npmjs.com/package/mernfinity)
 [![License](https://img.shields.io/npm/l/mernfinity)](https://www.npmjs.com/package/mernfinity)
 
@@ -114,7 +113,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Author
 
 [Theja Ashwin](https://github.com/thejaAshwin62)
-
 
 ## Support
 
