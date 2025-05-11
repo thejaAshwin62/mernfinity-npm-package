@@ -1,0 +1,46 @@
+{
+  "name": "mernfinity",
+  "version": "2.0.0",
+  "description": "A simple CLI tool to build and deploy MERN stack projects",
+  "main": "index.js",
+  "type": "module",
+  "types": "./github-repo-push.d.ts",
+  "bin": {
+    "setup-mern": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thejaAshwin62/mernfinity-npm-package/tree/main"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^9.3.7",
+    "dotenv": "^16.0.3",
+    "yaml": "^2.3.1"
+  },
+"keywords": [
+  "mern",
+  "deploy",
+  "nodejs",
+  "react",
+  "fullstack",
+  "devops",
+  "deployment",
+  "CI/CD",
+  "automation",
+  "build-tools",
+  "serverless",
+  "express",
+  "frontend",
+  "backend",
+  "typescript",
+  "javascript",
+  "web-app",
+  "api",
+  "web-development",
+  "render",
+  "frontend-framework"
+],
+  "author": "Theja Ashwin",
+  "license": "MIT"
+}
