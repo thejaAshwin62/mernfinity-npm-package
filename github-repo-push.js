@@ -265,8 +265,19 @@ export default async function pushToGitHub() {
       stdio: "pipe",
     }).toString();
     if (status) {
+      const { commitMessage } = await inquirer.prompt([
+        {
+          type: "input",
+          name: "commitMessage",
+          message: "Enter your commit message:",
+          default: "Update",
+          validate: (input) =>
+            input.trim().length > 0 || "Commit message is required",
+        },
+      ]);
+
       execSync("git add .", { stdio: "inherit" });
-      execSync('git commit -m "Update"', { stdio: "inherit" });
+      execSync(`git commit -m "${commitMessage}"`, { stdio: "inherit" });
       console.log(chalk.green("✅ Changes committed"));
     }
 

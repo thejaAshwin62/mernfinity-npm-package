@@ -1,12 +1,16 @@
 {
   "name": "mernfinity",
-  "version": "2.0.0",
+  "version": "2.0.5",
   "description": "A simple CLI tool to build and deploy MERN stack projects",
   "main": "index.js",
   "type": "module",
   "types": "./github-repo-push.d.ts",
   "bin": {
+    "mernfinity": "./index.js",
     "setup-mern": "./index.js"
+  },
+  "scripts": {
+    "postinstall": "node -e \"const fs=require('fs');const path=require('path');const pkgPath=path.join(process.env.INIT_CWD,'package.json');if(fs.existsSync(pkgPath)){const pkg=JSON.parse(fs.readFileSync(pkgPath));pkg.scripts=pkg.scripts||{};pkg.scripts.setup='mernfinity';fs.writeFileSync(pkgPath,JSON.stringify(pkg,null,2));}console.log('\\n\\x1b[32m✨ Thank you for installing mernfinity!\\x1b[0m\\n\\x1b[36m📝 To start using mernfinity, run:\\x1b[0m\\n\\x1b[33m   npm run setup\\x1b[0m\\n')\""
   },
   "repository": {
     "type": "git",
@@ -14,33 +18,33 @@
   },
   "dependencies": {
     "chalk": "^5.3.0",
-    "inquirer": "^9.3.7",
     "dotenv": "^16.0.3",
+    "inquirer": "^9.3.7",
     "yaml": "^2.3.1"
   },
-"keywords": [
-  "mern",
-  "deploy",
-  "nodejs",
-  "react",
-  "fullstack",
-  "devops",
-  "deployment",
-  "CI/CD",
-  "automation",
-  "build-tools",
-  "serverless",
-  "express",
-  "frontend",
-  "backend",
-  "typescript",
-  "javascript",
-  "web-app",
-  "api",
-  "web-development",
-  "render",
-  "frontend-framework"
-],
+  "keywords": [
+    "mern",
+    "deploy",
+    "nodejs",
+    "react",
+    "fullstack",
+    "devops",
+    "deployment",
+    "CI/CD",
+    "automation",
+    "build-tools",
+    "serverless",
+    "express",
+    "frontend",
+    "backend",
+    "typescript",
+    "javascript",
+    "web-app",
+    "api",
+    "web-development",
+    "render",
+    "frontend-framework"
+  ],
   "author": "Theja Ashwin",
   "license": "MIT"
 }

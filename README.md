@@ -33,7 +33,7 @@ npm install -g mernfinity
 Then just run:
 
 ```bash
-setup-mern
+npm run setup  
 ```
 
 ## Features ✨
