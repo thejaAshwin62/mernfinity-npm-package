@@ -1,5 +1,5 @@
 <p align="center">
- <img src="https://i.ibb.co/1G4t0L5w/Mern-Finity.png" alt="Mern-Finity" width="300px" /></a>
+ <img src="https://i.ibb.co/d0yn4txL/Mernfinity-2.png" alt="Mernfinity" width="300px" /></a>
 </p>
 
 <div align="center">
@@ -9,7 +9,6 @@
 [![NPM Version](https://img.shields.io/npm/v/mernfinity)](https://www.npmjs.com/package/mernfinity)
 [![License](https://img.shields.io/npm/l/mernfinity)](https://www.npmjs.com/package/mernfinity)
 [![Weekly Downloads](https://img.shields.io/npm/dw/mernfinity)](https://www.npmjs.com/package/mernfinity)
-
 
 🚀 Supercharge your MERN development! From local build to cloud deploy - automate your workflow with just a few keystrokes. Say goodbye to deployment hassles, hello to DevOps magic! ✨
 
@@ -33,7 +32,7 @@ npm install -g mernfinity
 Then just run:
 
 ```bash
-npm run setup  
+npm run setup
 ```
 
 ## Features ✨
