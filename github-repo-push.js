@@ -206,11 +206,21 @@ export default async function pushToGitHub() {
     }
 
     // Smart branch handling
-    const currentBranch = execSync("git rev-parse --abbrev-ref HEAD", {
-      stdio: "pipe",
-    })
-      .toString()
-      .trim();
+    let currentBranch;
+    try {
+      currentBranch = execSync("git rev-parse --abbrev-ref HEAD", {
+        stdio: "pipe",
+      })
+        .toString()
+        .trim();
+    } catch (error) {
+      // If this fails, it means there are no commits yet
+      currentBranch = "";
+      // Create initial commit if no commits exist
+      execSync("git add .", { stdio: "inherit" });
+      execSync('git commit -m "Initial commit"', { stdio: "inherit" });
+      console.log(chalk.green("✅ Created initial commit"));
+    }
 
     const { branchSetup } = await inquirer.prompt([
       {

@@ -1,6 +1,6 @@
 {
   "name": "mernfinity",
-  "version": "2.0.5",
+  "version": "2.0.8",
   "description": "A simple CLI tool to build and deploy MERN stack projects",
   "main": "index.js",
   "type": "module",

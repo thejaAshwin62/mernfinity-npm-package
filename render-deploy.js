@@ -204,6 +204,18 @@ export default async function deployToRender() {
     // Handle environment variables
     const envVars = await handleEnvVariables();
 
+    // Get server file name
+    const { serverFileName } = await inquirer.prompt([
+      {
+        type: "input",
+        name: "serverFileName",
+        message: "Enter your server file name (e.g., server.js, index.js):",
+        default: "server.js",
+        validate: (input) =>
+          input.trim().length > 0 || "Server file name is required",
+      },
+    ]);
+
     // Create render.yaml blueprint
     const renderConfig = {
       services: [
@@ -212,9 +224,8 @@ export default async function deployToRender() {
           name: serviceName,
           env: "node",
           plan: "free",
-          buildCommand:
-            "cd client && npm install && npm run build && cd .. && npm install",
-          startCommand: "npm start",
+          buildCommand: "npm install",
+          startCommand: `node ${serverFileName}`,
           autoDeploy: true,
           repo: repoUrl,
           branch: "main",
